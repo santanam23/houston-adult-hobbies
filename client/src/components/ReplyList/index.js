@@ -8,7 +8,7 @@ const ReplyList = ({ replies }) => {
         <span className="text-light">Replies</span>
       </div>
       <div className="card-body">
-        {reactions &&
+        {replies &&
           replies.map(reply => (
             <p className="pill mb-3" key={reply._id}>
               {reply.replyBody} //{' '}

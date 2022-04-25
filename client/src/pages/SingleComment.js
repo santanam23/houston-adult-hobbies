@@ -6,12 +6,12 @@ import ReplyForm from '../components/ReplyForm';
 
 import Auth from '../utils/auth';
 import { useQuery } from '@apollo/client';
-import { QUERY_THOUGHT } from '../utils/queries';
+import { QUERY_COMMENT } from '../utils/queries';
 
 const SingleComment = (props) => {
   const { id: commentId } = useParams();
 
-  const { loading, data } = useQuery(QUERY_THOUGHT, {
+  const { loading, data } = useQuery(QUERY_COMMENT, {
     variables: { id: commentId },
   });
 

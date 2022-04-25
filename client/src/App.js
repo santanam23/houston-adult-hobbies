@@ -17,7 +17,6 @@ import NoMatch from './pages/NoMatch';
 import SingleComment from './pages/SingleComment';
 import Profile from './pages/Profile';
 import Signup from './pages/Signup';
-import SingleComment from './pages/SingleComment';
 
 const httpLink = createHttpLink({
   uri: '/graphql',

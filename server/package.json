@@ -1,7 +1,7 @@
 {
   "name": "mern-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "a social chat created for adults who like to go out and explore the citys recreational activities",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -9,7 +9,7 @@
     "seed": "node seeders/seeds.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Miriam Santana",
   "license": "ISC",
   "dependencies": {
     "apollo-server-express": "^3.3.0",

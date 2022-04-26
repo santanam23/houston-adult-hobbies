@@ -17,7 +17,10 @@
   "keywords": [],
   "author": "Miriam Santana",
   "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.1.0"
+  },
   "dependencies": {
-    "concurrently": "^7.1.0"
+    "apollo-server-express": "^2.15.0"
   }
 }

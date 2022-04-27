@@ -1,7 +1,8 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const ReplyList = ({ replies }) => {
+  console.log(replies);
   return (
     <div className="card mb-3">
       <div className="card-header">
@@ -9,13 +10,19 @@ const ReplyList = ({ replies }) => {
       </div>
       <div className="card-body">
         {replies &&
-          replies.map(reply => (
-            <p className="pill mb-3" key={reply._id}>
-              {reply.replyBody} [' ']
-              <Link to={`/profile/${reply.username}`} style={{ fontWeight: 700 }}>
+          replies.map((reply) => (
+            // two siblings as one component
+            <div key={reply._id}>
+              <p className="pill mb-3">
+                {reply.replyBody}
+              </p>
+              <Link
+                to={`/profile/${reply.username}`}
+                style={{ fontWeight: 700 }}
+              >
                 {reply.username} on {reply.createdAt}
               </Link>
-            </p>
+            </div>
           ))}
       </div>
     </div>

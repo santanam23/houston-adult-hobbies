@@ -5,6 +5,7 @@ import CommentForm from '../components/CommentForm';
 import CommentList from '../components/CommentList';
 import FriendList from '../components/FriendList';
 
+
 import { useQuery, useMutation } from '@apollo/client';
 import { QUERY_USER, QUERY_ME } from '../utils/queries';
 import { ADD_FRIEND } from '../utils/mutations';

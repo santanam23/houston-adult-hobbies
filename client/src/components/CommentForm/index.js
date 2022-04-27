@@ -9,7 +9,7 @@ const CommentForm = () => {
   const [characterCount, setCharacterCount] = useState(0);
 
   const [addComment, { error }] = useMutation(ADD_COMMENT, {
-    update(cache, { data: { addThought } }) {
+    update(cache, { data: { addComment } }) {
       try {
         // update COMMENT array's cache
         // could potentially not exist yet, so wrap in a try/catch

@@ -16,7 +16,7 @@ const SingleComment = (props) => {
   });
 
   const comment = data?.comment || {};
-
+  console.log(comment);
   if (loading) {
     return <div>Loading...</div>;
   }
@@ -35,8 +35,8 @@ const SingleComment = (props) => {
         </div>
       </div>
 
-      {comment.reactionCount > 0 && (
-        <ReplyList reactions={comment.reactions} />
+      {comment.replyCount > 0 && (
+        <ReplyList replies={comment.replies} />
       )}
 
       {Auth.loggedIn() && <ReplyForm commentId={comment._id} />}

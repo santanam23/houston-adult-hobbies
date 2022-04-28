@@ -27,7 +27,7 @@ const CommentList = ({ comments, title }) => {
                 <p>{comment.commentText}</p>
                 <p className="mb-0">
                   Reply: {comment.replyCount} || Click to{' '}
-                  {comment.replyCount ? 'see' : 'start'} the discussion!
+                  {comment.replyCount ? 'see' : 'start'} the chat!
                 </p>
               </Link>
             </div>

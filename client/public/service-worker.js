@@ -6,12 +6,7 @@ const FILES_TO_CACHE = [
   '/index.html',
   '/favicon.ico',
   '/manifest.json',
-  '/app.js',
-  '/index.css',
-  '/assets/images/icons/icon-72x72.png',
-  '/assets/images/icons/icon-96x96.png',
-  '/assets/images/icons/icon-128x128.png',
-  '/assets/images/icons/icon-144x144.png'
+  '/index.css'
 ];
 
 // Install the service worker

@@ -28,7 +28,7 @@ const NewsFeed = () => {
           ) : (
             <CommentList
               comments={comments}
-              title="News Feed"
+              title="NewsFeed"
             />
           )}
         </div>

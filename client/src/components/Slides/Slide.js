@@ -37,6 +37,7 @@ export default function Slide() {
                     key={obj.id}
                     className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
                     >
+                         {/* eslint-disable-next-line jsx-a11y/alt-text */}
                         <img src={PUBLIC_URL + `/images/img${index + 1}.jpg`} />
                     </div>
                 )

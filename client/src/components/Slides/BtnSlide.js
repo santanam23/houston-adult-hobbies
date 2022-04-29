@@ -2,7 +2,7 @@ import React from "react";
 import "./Slide.css";
 import FontAwesomeIcon from "font-awesome"; 
 
-export default function BtnSlider({ direction, moveSlide }) {
+export default function BtnSlide({ direction, moveSlide }) {
   console.log(direction, moveSlide);
   return (
     <>

@@ -6,7 +6,7 @@ const Gallery = () => {
         <>
             <Slide />
         </>
-    )
+    );
 }
 
 export default Gallery;

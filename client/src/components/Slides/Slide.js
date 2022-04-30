@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import './Slide.css'
 import BtnSlide from './BtnSlide';
-import Data from './Data'
+import Data from './Data';
 
 export default function Slide() {
 
@@ -38,7 +38,7 @@ export default function Slide() {
                     className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
                     >
                          {/* eslint-disable-next-line jsx-a11y/alt-text */}
-                        {/* <img src={public + `/images/img${index + 1}.jpg`} /> */}
+                        <img src={`/images/image${index + 1}.jpeg`} />
                     </div>
                 )
             })}

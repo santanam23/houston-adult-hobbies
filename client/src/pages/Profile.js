@@ -3,7 +3,7 @@ import { Redirect, useParams } from 'react-router-dom';
 import CommentForm from '../components/CommentForm';
 import CommentList from '../components/CommentList';
 import FriendList from '../components/FriendList';
-
+// import ProfileImage from '../components/ProfileImage';
 
 import { useQuery, useMutation } from '@apollo/client';
 import { QUERY_USER, QUERY_ME } from '../utils/queries';
@@ -50,6 +50,9 @@ const Profile = (props) => {
 
   return (
     <div>
+      <div className="flex-row mb-3">
+        {/* <ProfileImage /> */}
+      </div>
       <div className="flex-row mb-3">
         <h2 className="bg-dark text-secondary p-3 display-inline-block">
           Viewing {userParam ? `${user.username}'s` : 'your'} profile.

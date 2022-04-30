@@ -7,7 +7,7 @@ const FILES_TO_CACHE = [
   '/favicon.ico',
   '/manifest.json',
   '/index.css',
-  'images/image1.jpeg',
+  '/images/image1.jpeg',
   'images/image2.jpeg',
   'images/image3.jpeg',
   'images/image4.jpeg',

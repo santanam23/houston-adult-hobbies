@@ -31,10 +31,10 @@ export default function Slide() {
 
     return (
         <div className="container-slide">
-            {Data.map((obj, index) => {
+            {Data.map(({id}, index) => {
                 return (
                     <div
-                    key={obj.id}
+                    key={id}
                     className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
                     >
                          {/* eslint-disable-next-line jsx-a11y/alt-text */}
@@ -48,6 +48,7 @@ export default function Slide() {
             <div className="container-dots">
                 {Array.from({length: 5}).map((item, index) => (
                     <div 
+                    key={index}
                     onClick={() => moveDot(index + 1)}
                     className={slideIndex === index + 1 ? "dot active" : "dot"}
                     ></div>

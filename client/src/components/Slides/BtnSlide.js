@@ -1,4 +1,5 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './Slide.css';
 
 export default function BtnSlide({ direction, moveSlide }) {
@@ -9,7 +10,7 @@ export default function BtnSlide({ direction, moveSlide }) {
       className={direction === "next" ? "btn-slide next" : "btn-slide prev"}
     >
     
-     <img src={direction === "next" ? <i class="fa-solid fa-arrow-right"></i> : <i class="fa-solid fa-arrow-left"></i>}  alt={direction}/>
+     <img src={direction === "next" ? <FontAwesomeIcon icon={["fa-solid fa-arrow-right"]} /> : <FontAwesomeIcon icon={["fa-solid fa-arrow-left"]}/>}  alt={direction}/>
     </button>
   );
   

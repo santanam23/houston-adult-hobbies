@@ -21,6 +21,7 @@ const Header = () => {
             <>
               <Link to="/">Home</Link>
               <Link to="/profile">My Profile</Link>
+              <Link to="/gallery">Gallery</Link>
               <Link to="/newsfeed">NewsFeed</Link>
               <a href="/" onClick={logout}>
                 Logout

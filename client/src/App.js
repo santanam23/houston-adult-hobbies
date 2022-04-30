@@ -16,6 +16,7 @@ import Login from './pages/Login';
 import NoMatch from './pages/NoMatch';
 import SingleComment from './pages/SingleComment';
 import Profile from './pages/Profile';
+import Gallery from './pages/Gallery';
 import Signup from './pages/Signup';
 import NewsFeed from './pages/NewsFeed';
 
@@ -49,6 +50,7 @@ function App() {
               <Route exact path="/" component={Home} />
               <Route exact path="/login" component={Login} />
               <Route exact path="/signup" component={Signup} />
+              <Route exact path="/gallery" component={Gallery} />
               <Route exact path="/newsfeed" component={NewsFeed} />
               <Route exact path="/profile/:username?" component={Profile} />
               <Route exact path="/comment/:id" component={SingleComment} />

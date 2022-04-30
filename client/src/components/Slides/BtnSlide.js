@@ -1,6 +1,5 @@
-import React from "react";
-import "./Slide.css";
-import FontAwesomeIcon from "font-awesome"; 
+import React from 'react';
+import './Slide.css'
 
 export default function BtnSlide({ direction, moveSlide }) {
   console.log(direction, moveSlide);
@@ -10,7 +9,7 @@ export default function BtnSlide({ direction, moveSlide }) {
       onClick={moveSlide}
       className={direction === "next" ? "btn-slide next" : "btn-slide prev"}
     >
-    <FontAwesomeIcon icon="fa-solid fa-arrow-left" />
+    <i class="fa-solid fa-arrow-left"></i>
       {/* // <img src={direction === "next" ? rightArrow : leftArrow} /> */}
     </button>
     <button
@@ -19,7 +18,7 @@ export default function BtnSlide({ direction, moveSlide }) {
     className={direction === "next" ? "btn-slide next" : "btn-slide prev"}
   >
  
-  <FontAwesomeIcon icon="fa-solid fa-arrow-right-long" />
+ <i class="fa-solid fa-arrow-right"></i>
     {/* // <img src={direction === "next" ? rightArrow : leftArrow} /> */}
   </button>
   </>

@@ -1,5 +1,11 @@
 import React from 'react';
 import home from '../assets/images/icons/home.jpeg';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faFacebook,
+    faTwitter,
+    faInstagram
+  } from "@fortawesome/free-brands-svg-icons";
 import './home.css';
 const Home = () => {
     return (
@@ -17,7 +23,19 @@ const Home = () => {
             
             <div className="column side">
                 <h2>Follow Us</h2>
-                <p></p>
+                <div className="row">
+                <a href="https://www.facebook.com/search/top?q=sportskind%20-%20hou"
+                    className="facebook-social">
+                    <FontAwesomeIcon icon={faFacebook} size="2x"/>
+                </a>
+                <a href="https://www.twitter.com/" className="twitter-social">
+                    <FontAwesomeIcon icon={faTwitter} size="2x" />
+                </a>
+                <a href="https://www.instagram.com/houstonsandvolleyball/?hl=en"
+                    className="instagram-social">
+                    <FontAwesomeIcon icon={faInstagram} size="2x"/>
+                </a>
+                </div>
             </div>
         </div>    
         </main>
